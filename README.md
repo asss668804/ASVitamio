@@ -22,7 +22,8 @@ pod "ASVitamio"
 
 ## Author
 
-Ansen, sdglyuan@gmail.com
+developer@gmail.com
+
 
 ## License
 

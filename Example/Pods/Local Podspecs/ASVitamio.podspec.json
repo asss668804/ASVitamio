@@ -1,0 +1,56 @@
+{
+  "name": "ASVitamio",
+  "version": "1.0.4",
+  "summary": "AS Vitamio Player",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/asss668804",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "developer": "developer@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/asss668804/ASVitamio.git",
+    "tag": "1.0.4"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "ASVitamio/Classes/**/*",
+  "public_header_files": "ASVitamio/classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "AVFoundation",
+    "AudioToolbox",
+    "CoreGraphics",
+    "CoreMedia",
+    "Foundation",
+    "MediaPlayer",
+    "OpenGlES",
+    "QuartzCore"
+  ],
+  "libraries": [
+    "bz2",
+    "z",
+    "stdc++",
+    "iconv"
+  ],
+  "subspecs": [
+    {
+      "name": "Vitamio",
+      "preserve_paths": "ASVitamio/Vendor/Vitamio/include/Vitamio/*.h",
+      "source_files": "ASVitamio/Vendor/Vitamio/include/Vitamio/*",
+      "vendored_libraries": [
+        "ASVitamio/Vendor/Vitamio/libffmpeg.a",
+        "ASVitamio/Vendor/Vitamio/libopenssl.a",
+        "ASVitamio/Vendor/Vitamio/libVitamio.a"
+      ],
+      "xcconfig": {
+        "HEADER_SEARCH_PATHS": "${PODS_ROOT}/{s.name}/ASVitamio/Vendor/Vitamio/include/**"
+      }
+    }
+  ]
+}
