@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ASVitamio_Example' do
+  pod 'ASVitamio', :path => '../'
+
+  target 'ASVitamio_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

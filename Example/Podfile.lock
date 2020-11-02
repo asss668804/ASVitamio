@@ -1,0 +1,18 @@
+PODS:
+  - ASVitamio (0.1.0):
+    - ASVitamio/Vitamio (= 0.1.0)
+  - ASVitamio/Vitamio (0.1.0)
+
+DEPENDENCIES:
+  - ASVitamio (from `../`)
+
+EXTERNAL SOURCES:
+  ASVitamio:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ASVitamio: de1002d8e7e3a9d1bfe75ad20790274434872510
+
+PODFILE CHECKSUM: 5fe045965f8002a8e3f43b8db97be328fbd9b183
+
+COCOAPODS: 1.1.0
